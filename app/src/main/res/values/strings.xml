@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Figma Design</string>
+    <string name="display_text">Version 1.0 \u000D\nPowered By WebKype. \u000D\n\u000D\n\u000D\n</string>
+    <string name="manage_your">Manage your sales lead and their status anytime from anywhere.</string>
+    <string name="prioritise">Prioritise sales followup with reminders on clicks.</string>
+    <string name="performance">Track duties, attendance and sales performance at all stages.</string>
+    <string name="enter_the">Enter the OTP Code we sent to your Mail</string>
+    <string name="search_text">   Search for area or location</string>
+    <string name="tower_b4">Tower-B4, Panchsheel Green, Ittaria, Uttar Pradesh 201009, India</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

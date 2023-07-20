@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StarterActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_25sdp"
+        android:text="Skip"
+        android:textColor="@color/app_theme"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/inter"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/fragment_container"
+        android:layout_below="@id/skip_btn"
+        android:layout_above="@id/scrollIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/scrollIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/point1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/ellipse_85" />
+
+        <View
+            android:id="@+id/point2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/ellipse_85" />
+
+        <View
+            android:id="@+id/point3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/ellipse_85" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/start_img1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rectangle"
+            android:elevation="20dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="@dimen/_50sdp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

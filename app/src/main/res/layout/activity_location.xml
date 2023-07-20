@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LocationActivity">
+
+    <Toolbar
+        android:id="@+id/location_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_theme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24ssp"
+            android:fontFamily="@font/inter"
+            android:lineHeight="@dimen/_18ssp" />
+    </Toolbar>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_360sdp"
+        android:layout_below="@id/location_toolbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+    <EditText
+        android:id="@+id/searhBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_toolbar"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:layout_marginBottom="@dimen/_17sdp"
+        android:background="@drawable/search_background"
+        android:drawableLeft="@drawable/search_icon"
+        android:hint="Search for area or location"
+        android:textColorHint="@color/app_theme"
+        android:textColor="@color/black"
+        android:padding="@dimen/_7sdp"
+        android:textSize="@dimen/_15ssp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/your_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:gravity="center"
+        android:lineSpacingExtra="-1sp"
+        android:text="Your Location"
+        android:textColor="#7C7C7C"
+        android:textSize="@dimen/_17ssp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_below="@id/your_location"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/app_theme" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/inter"
+        android:gravity="center_horizontal|top"
+        android:text="@string/tower_b4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/useLocation"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:text="Use This Location"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle"
+        android:elevation="20dp"/>
+
+
+</RelativeLayout>

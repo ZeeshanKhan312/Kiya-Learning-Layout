@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VerificationPage">
+
+    <ImageView
+        android:id="@+id/otpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otp_verification"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+    <ImageView
+        android:id="@+id/otpImage"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/otpText"
+        android:src="@drawable/rafiki"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/enter_the_o"
+        android:layout_width="319dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/otpImage"
+        android:text="@string/enter_the"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal|top"
+        />
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otpView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_28sdp"
+        android:layout_marginRight="@dimen/_28sdp"
+        app:box_margin_right="@dimen/_6sdp"
+        android:textColor="@color/black"
+        app:bar_enabled="true"
+        app:bar_active_color="@color/app_theme"
+        app:bar_inactive_color="#00000000"
+        app:bar_height="3dp"
+        app:bar_margin="@dimen/_8sdp"
+        app:height="@dimen/_48sdp"
+        app:width="@dimen/_52sdp"
+        app:length="4"
+        app:otp=""
+        app:otp_box_background="@drawable/otp_background"
+        app:otp_text_size="@dimen/_22ssp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifyBtn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/otpImage"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:text="Verify"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle"
+        android:elevation="@dimen/_20sdp"/>
+
+
+
+</RelativeLayout>
