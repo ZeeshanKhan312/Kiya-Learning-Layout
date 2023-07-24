@@ -7,62 +7,27 @@
     android:background="@color/white"
     tools:context=".DashboardActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/dashboard_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/app_theme">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dashboard"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:fontFamily="@font/inter"/>
-    </androidx.appcompat.widget.Toolbar>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+    <FrameLayout
+        android:id="@+id/dashboard_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/dashboard_toolbar"/>
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/navigation_bar"/>
 
-    <com.google.android.material.tabs.TabLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_below="@id/view_pager"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/black"
-        android:background="@color/white">
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/home"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/home"/>
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/classes"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/classes"/>
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/attendance"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/attendance"/>
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/books"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/free_books"/>
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/profile"/>
-
-    </com.google.android.material.tabs.TabLayout>
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="@dimen/_50sdp"
+        app:itemIconSize="@dimen/_18sdp"
+        app:itemIconTint="@drawable/color_selector"
+        app:itemRippleColor="@color/teal_700"
+        app:itemTextAppearanceActive="@style/Widget.BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/Widget.BottomNavigationView"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_menu" />
 
 
 </RelativeLayout>
