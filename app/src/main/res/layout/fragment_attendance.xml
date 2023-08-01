@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".fragments.AttendanceFragment">
 
@@ -22,143 +23,98 @@
             android:fontFamily="@font/inter"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/_20sdp"
-        android:paddingBottom="@dimen/_20sdp"
-        android:orientation="horizontal"
-        android:layout_below="@id/dashboard_toolbar">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="@dimen/_18sdp"
-            android:paddingLeft="@dimen/_20sdp"
-            android:text="-"
-            android:onClick="previousMonth"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/month_year"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:textSize="@dimen/_18sdp"
-            android:text="SEPTEMBER 2022"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/_20sdp"
-            android:textSize="@dimen/_18sdp"
-            android:textColor="@color/black"
-            android:text="-"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linear_layout2"
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        app:headerColor="#ffff"
+        app:headerLabelColor="@color/black"
+        app:todayLabelColor="@color/purple_500"
+        app:selectionColor="@color/black"
+        app:abbreviationsLabelsColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/linear_layout">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="MON"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TUE"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="WED"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="THU"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="FRI"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SAT"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SUN"
-            android:textColor="@color/app_theme"
-            android:textAlignment="center"
-            android:textSize="@dimen/_16sdp"/>
-    </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/calendar_rv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linear_layout2"/>
+        android:layout_below="@id/dashboard_toolbar"/>
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/absent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/calendar_rv"
+        android:layout_below="@id/calendarView"
         android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_60sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:layout_marginBottom="@dimen/_16sdp"
-        android:background="@drawable/rectangle2"
-        android:gravity="center_vertical"
-        android:paddingLeft="@dimen/_10sdp"
-        android:text="Absent"
-        android:textSize="@dimen/_16sdp"
-        android:textColor="@color/black"/>
+        android:background="@drawable/absent_box"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center_vertical|fill_horizontal"
+        android:orientation="horizontal">
 
-    <TextView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Absent"
+            android:drawableLeft="@drawable/bg_2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="24"
+            android:gravity="center"
+            android:background="@drawable/circle_image_bg"
+            android:textColor="@color/app_theme2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/present"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_16sdp"
-        android:layout_margin="@dimen/_16sdp"
-        android:background="@drawable/rectangle2"
         android:layout_below="@id/absent"
-        android:paddingLeft="@dimen/_10sdp"
-        android:text="Present"
-        android:gravity="center_vertical"
-        android:textColor="@color/black"/>
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/present_box"
+        android:gravity="center_vertical|fill_horizontal"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Present"
+            android:drawableLeft="@drawable/bg_4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="24"
+            android:gravity="center"
+            android:background="@drawable/present_circle"
+            android:textColor="#32FF04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </RelativeLayout>

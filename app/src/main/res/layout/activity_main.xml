@@ -21,9 +21,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
             android:gravity="center"
             android:text="@string/display_text"
-            android:textAppearance="@style/simple_design"/>
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/app_theme"
+            android:fontFamily="@font/inter"/>
     </LinearLayout>
 
 

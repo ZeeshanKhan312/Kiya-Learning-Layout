@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_4sdp"
+            android:text="Zeeshan Khan"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/check_inText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_alignParentLeft="true"
+            android:text="Check In: "
+            android:textColor="@color/app_theme2"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+        <TextView
+            android:id="@+id/check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/check_inText"
+            android:text="10 AM "
+            android:textStyle="bold"
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+        <TextView
+            android:id="@+id/check_out_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toLeftOf="@id/check_out"
+            android:text="Check Out: "
+            android:textColor="@color/app_theme2"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+        <TextView
+            android:id="@+id/check_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_alignParentRight="true"
+            android:text="11 AM "
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:padding="@dimen/_4sdp"/>
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_inText"
+            android:layout_alignParentLeft="true"
+            android:text="23 March 2023 "
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_inText"
+            android:layout_alignParentRight="true"
+            android:text="23 March 2023 "
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+
+        <TextView
+            android:id="@+id/address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date1"
+            android:layout_alignParentLeft="true"
+            android:text="Sector 18, Noida "
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+        <TextView
+            android:id="@+id/address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date2"
+            android:layout_alignParentRight="true"
+            android:text="Sector 18, Noida "
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_4sdp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

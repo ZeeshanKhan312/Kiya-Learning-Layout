@@ -7,19 +7,19 @@
     android:background="@color/white"
     tools:context=".StarterActivity">
 
-
-
-
     <TextView
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_margin="@dimen/_25sdp"
-        android:text="Skip"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:fontFamily="@font/inter"
+        android:text="SKIP"
         android:textColor="@color/app_theme"
-        android:textSize="@dimen/_15sdp"
-        android:fontFamily="@font/inter"/>
+        android:textSize="@dimen/_15sdp" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/fragment_container"
@@ -41,7 +41,7 @@
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
             android:background="@drawable/ellipse_85" />
 
         <View
@@ -49,7 +49,7 @@
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
             android:background="@drawable/ellipse_85" />
 
         <View
@@ -57,18 +57,18 @@
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
             android:background="@drawable/ellipse_85" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next_btn"
             android:layout_width="190dp"
             android:layout_height="50dp"
-            android:layout_alignEnd="@+id/start_img1"
             android:layout_gravity="center_vertical"
             android:background="@drawable/rectangle"
             android:elevation="20dp"
             android:text="Next"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginLeft="@dimen/_50sdp"/>

@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Location"
             android:textColor="@color/white"
-            android:textSize="@dimen/_24ssp"
+            android:textSize="@dimen/_20ssp"
             android:fontFamily="@font/inter"
             android:lineHeight="@dimen/_18ssp" />
     </Toolbar>
@@ -45,8 +45,8 @@
         android:hint="Search for area or location"
         android:textColorHint="@color/app_theme"
         android:textColor="@color/black"
-        android:padding="@dimen/_7sdp"
-        android:textSize="@dimen/_15ssp"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
         android:maxLines="1"/>
 
     <TextView
@@ -83,7 +83,7 @@
         android:gravity="center_horizontal|top"
         android:text="@string/tower_b4"
         android:textColor="@color/black"
-        android:textSize="@dimen/_14ssp" />
+        android:textSize="@dimen/_12ssp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/useLocation"
@@ -94,6 +94,7 @@
         android:layout_marginBottom="@dimen/_30sdp"
         android:text="Use This Location"
         android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:background="@drawable/rectangle"
         android:elevation="20dp"/>

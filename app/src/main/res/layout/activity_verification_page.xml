@@ -24,13 +24,15 @@
         android:layout_marginTop="20dp"/>
     <TextView
         android:id="@+id/enter_the_o"
-        android:layout_width="319dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/otpImage"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
         android:text="@string/enter_the"
         android:layout_marginTop="@dimen/_18sdp"
-        android:textSize="20sp"
+        android:textSize="@dimen/_16sdp"
         android:textColor="@color/black"
         android:gravity="center_horizontal|top"
         />
