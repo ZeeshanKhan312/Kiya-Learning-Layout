@@ -23,14 +23,6 @@
             android:fontFamily="@font/inter"/>
     </androidx.appcompat.widget.Toolbar>
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:id="@+id/profile_image"-->
-<!--        android:layout_width="@dimen/_130sdp"-->
-<!--        android:layout_height="@dimen/_130sdp"-->
-<!--        android:src="@drawable/home"-->
-<!--        app:civ_border_color="@color/black"-->
-<!--        app:civ_border_width="10dp" />-->
-
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
@@ -105,7 +97,7 @@
             android:layout_columnWeight="1"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
@@ -123,13 +115,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/num_id"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Classes \nOffered"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -156,13 +148,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/classes_taken"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Classes \nTaken"
                 android:gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -172,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/cancel_classes"
@@ -189,13 +181,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cancel_classes"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Cancel \nClasses"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -206,9 +198,9 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/earnings"
@@ -231,7 +223,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -242,7 +234,7 @@
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
             android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/paid"
@@ -265,7 +257,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -275,8 +267,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/due"
@@ -299,7 +291,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -310,9 +302,9 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
                 android:id="@+id/health_user"
@@ -326,13 +318,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/health_user"
-                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Profile"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -344,7 +336,7 @@
             android:background="@drawable/rounded_corner"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
                 android:id="@+id/calendar"
@@ -358,13 +350,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/calendar"
-                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Attendance"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 
@@ -374,9 +366,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
                 android:id="@+id/library"
@@ -390,13 +381,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/library"
-                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Library"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
 

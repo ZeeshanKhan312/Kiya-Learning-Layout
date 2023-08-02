@@ -22,7 +22,7 @@ class ProfileFragment : Fragment() {
         val adapter = ArrayAdapter.createFromResource(
             this@ProfileFragment.requireContext(),
             R.array.dropdown_items,
-            android.R.layout.simple_spinner_item
+            R.layout.custom_spinner
         )
 
         // Specify the layout to use when the list of choices appears
