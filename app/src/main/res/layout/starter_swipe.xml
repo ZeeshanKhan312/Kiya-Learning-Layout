@@ -6,11 +6,12 @@
 
     <ImageView
         android:id="@+id/start_img"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/start_img1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_60sdp"/>
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_60sdp"/>
 
     <ImageView
         android:id="@+id/swipe_title"
@@ -28,9 +29,12 @@
         android:layout_below="@id/swipe_title"
         android:layout_alignStart="@+id/start_img"
         android:layout_marginTop="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignEnd="@id/start_img"
         android:gravity="top"
         android:text="@string/manage_your"
         android:textSize="@dimen/_13ssp"
-        android:textColor="@color/app_theme"/>
+        android:textColor="@color/app_theme"
+        android:paddingBottom="@dimen/_10sdp"/>
 
 </RelativeLayout>

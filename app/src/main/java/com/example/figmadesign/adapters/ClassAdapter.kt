@@ -18,6 +18,7 @@ class ClassAdapter(val list: ArrayList<String>, val context: Context?):RecyclerV
         val class_time:TextView=itemView.findViewById(R.id.class_time)
         val class_fees:TextView=itemView.findViewById(R.id.class_fees)
         val request_date:TextView=itemView.findViewById(R.id.request_date)
+        val line:View=itemView.findViewById(R.id.line)
         val acceptBtn:TextView=itemView.findViewById(R.id.acceptBtn)
         val rejectBtn:TextView=itemView.findViewById(R.id.rejectBtn)
         val class_method:TextView=itemView.findViewById(R.id.class_method)
@@ -45,10 +46,12 @@ class ClassAdapter(val list: ArrayList<String>, val context: Context?):RecyclerV
         if(classSection!="newClass") {
             holder.acceptBtn.visibility = View.GONE
             holder.rejectBtn.visibility = View.GONE
+            holder.line.visibility=View.GONE
         }
         else{
             holder.acceptBtn.visibility = View.VISIBLE
             holder.rejectBtn.visibility = View.VISIBLE
+            holder.line.visibility=View.VISIBLE
         }
     }
 }
