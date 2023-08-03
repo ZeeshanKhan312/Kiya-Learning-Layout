@@ -26,14 +26,15 @@
 
     <com.applandeo.materialcalendarview.CalendarView
         android:id="@+id/calendarView"
-        app:headerColor="#ffff"
-        app:headerLabelColor="@color/black"
+        app:headerColor="@color/app_theme"
         app:todayLabelColor="@color/purple_500"
         app:selectionColor="@color/black"
         app:abbreviationsLabelsColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dashboard_toolbar"/>
+        android:layout_below="@id/dashboard_toolbar"
+        android:layout_marginTop="1dp"
+        android:scrollbarSize="@dimen/_8ssp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/absent"
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/calendarView"
         android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginEnd="@dimen/_16sdp"
         android:background="@drawable/absent_box"
         android:elevation="@dimen/_10sdp"
@@ -54,7 +55,7 @@
             android:text="  Absent"
             android:drawableLeft="@drawable/bg_2"
             android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp"
+            android:textSize="@dimen/_12ssp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +95,7 @@
             android:text="  Present"
             android:drawableLeft="@drawable/bg_4"
             android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp"
+            android:textSize="@dimen/_12ssp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

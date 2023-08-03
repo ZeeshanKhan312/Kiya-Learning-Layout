@@ -64,7 +64,7 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/inter"
                 android:textStyle="bold"
-                android:textSize="@dimen/_18sdp"/>
+                android:textSize="@dimen/_16ssp"/>
             <TextView
                 android:id="@+id/work"
                 android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
                 android:text="Site Engineer"
                 android:textColor="@color/black"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_14sdp"/>
+                android:textSize="@dimen/_12ssp"/>
             <TextView
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
                 android:text="Sector 62, Noida, U.P"
                 android:textColor="@color/black"
                 android:fontFamily="@font/inter"
-                android:textSize="@dimen/_14sdp"/>
+                android:textSize="@dimen/_12ssp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -93,12 +93,12 @@
         android:layout_below="@id/linear_layout"
         android:layout_marginTop="@dimen/_30sdp">
         <RelativeLayout
+            android:id="@+id/classes_offered_box"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_5sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/num_id"
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/num_id"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Classes \nOffered"
                 android:layout_centerHorizontal="true"
@@ -127,11 +127,12 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/classes_taken_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
                 android:id="@+id/classes_taken"
@@ -148,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/classes_taken"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Classes \nTaken"
                 android:gravity="center_horizontal"
@@ -160,10 +161,12 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/cancel_classes_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
@@ -181,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cancel_classes"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Cancel \nClasses"
                 android:layout_centerHorizontal="true"
@@ -194,12 +197,12 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/earning_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
@@ -217,8 +220,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/earnings"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Earning"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
@@ -229,11 +232,12 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/paid_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
@@ -251,8 +255,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/paid"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Paid"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
@@ -263,11 +267,13 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/due_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
             android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <TextView
@@ -285,8 +291,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/due"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Due"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
@@ -298,12 +304,12 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/profile_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
@@ -318,8 +324,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/health_user"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Profile"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
@@ -330,12 +336,12 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/attendance_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
@@ -350,8 +356,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/calendar"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Attendance"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
@@ -359,14 +365,16 @@
                 android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
                 android:textColor="@color/app_theme"/>
-
         </RelativeLayout>
+
         <RelativeLayout
+            android:id="@+id/library_box"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:background="@drawable/rounded_corner"
             android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:circularflow_defaultRadius="@dimen/_10sdp">
             <ImageView
@@ -381,8 +389,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/library"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="Library"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
